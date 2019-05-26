@@ -56,6 +56,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             zoom = CameraUpdateFactory.zoomTo(16);
 
+            //add a marker and move the camera
+
             mMap.addMarker(new MarkerOptions().position(new LatLng(latlngs.get(i).getLat(),
                     latlngs.get(i).getLon())).title(latlngs.get(i).getMarker()));
 
